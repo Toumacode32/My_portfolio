@@ -4,7 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatoumata Ndiaye - Virtual Assistant</title>
+    <title>Fatoumata Ndiaye - Software Engineering Student | ALU</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fatoumata Ndiaye - Software Engineering student at African Leadership University. Specializing in full-stack development, mobile apps, and UI/UX design. View my portfolio and projects.">
+    <meta name="keywords" content="Fatoumata Ndiaye, Software Engineer, ALU, Flutter Developer, Web Developer, Portfolio, Kigali Rwanda, African Leadership University">
+    <meta name="author" content="Fatoumata Ndiaye">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="Fatoumata Ndiaye - Software Engineering Student">
+    <meta property="og:description" content="Software Engineering student at ALU specializing in full-stack development, mobile apps, and UI/UX design. Explore my projects and certifications.">
+    <meta property="og:image" content="https://yourwebsite.com/assets/Untitled design.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourwebsite.com/">
+    <meta name="twitter:title" content="Fatoumata Ndiaye - Software Engineering Student">
+    <meta name="twitter:description" content="Software Engineering student at ALU specializing in full-stack development, mobile apps, and UI/UX design.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/Untitled design.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <!-- Google Analytics -->
+    <!-- Replace 'G-XXXXXXXXXX' with your actual Google Analytics tracking ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
@@ -14,160 +49,261 @@
 </head>
 
 <body>
-    <header class="hero" id="home">
-        <div class="container">
-            <h1>Fatoumata Ndiaye</h1>
-            <h2>Virtual Assistant & Software Engineering Student</h2>
-            <p class="tagline">"Optimizing Productivity, Elevating Executive Performance"</p>
-            <div class="cta-buttons">
-                <a href="mailto:fatoumata.nd01@gmail.com" class="btn primary">Contact Me</a>
-                <a href="https://www.linkedin.com/in/fatoumata-ndiaye-23b9702ba/" class="btn secondary"
-                    target="_blank">LinkedIn</a>
+    <!-- Navigation Bar with Language Toggle -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">FN</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-translate="nav_home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-translate="nav_about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-translate="nav_projects">Projects</a></li>
+                <li><a href="#services" class="nav-link" data-translate="nav_services">Services</a></li>
+                <li><a href="#certifications" class="nav-link" data-translate="nav_certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
+            </ul>
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-btn">
+                    <span class="lang-text">FR</span>
+                    <svg class="lang-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 1C5.03 1 1 5.03 1 10s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A7.49 7.49 0 0116.93 7zM10 2.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM2.26 11C2.1 10.36 2 9.69 2 9s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H2.26zm.81 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.49 7.49 0 013.07 13zm2.95-8H3.07a7.49 7.49 0 014.33-3.56A15.65 15.65 0 006.02 5zM10 17.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM12.34 13H7.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 3.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a7.49 7.49 0 01-4.33 3.56zM14.36 11c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        <div class="scroll-down"></div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <!-- Profile Picture -->
+            <div class="profile-picture">
+                <img src="assets/Untitled design.jpg" alt="Fatoumata Ndiaye" onerror="this.style.display='none'">
+            </div>
+
+            <h1 data-translate="hero_name">Fatoumata Ndiaye</h1>
+            <h2 data-translate="hero_title">Software Engineering Student</h2>
+            <p class="tagline" data-translate="hero_tagline">"Building innovative solutions through code, creativity, and collaboration"</p>
+            <p class="hero-subtitle" data-translate="hero_subtitle">African Leadership University | Senegal/Rwanda</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary" data-translate="hero_btn_work">Let's Work Together</a>
+                <a href="#projects" class="btn secondary" data-translate="hero_btn_projects">View Projects</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Fatoumata32" target="_blank" class="social-icon" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/fatoumata-ndiaye-b92901391/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:fatoumata.nd01@gmail.com" class="social-icon" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me/221781712353" target="_blank" class="social-icon" aria-label="WhatsApp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </header>
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-translate="about_title">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>As a Software Engineering student at African Leadership University and an experienced Virtual
-                        Assistant, I bring a unique blend of technical acumen and organizational expertise to every
-                        project.</p>
-                    <p>My passion lies in optimizing workflows and leveraging technology to enhance productivity. With a
-                        proven track record in project management and executive support, I help businesses streamline
-                        their operations and achieve their goals efficiently.</p>
+                <!-- Left: Professional Summary -->
+                <div class="about-profile-column">
+                    <p class="about-summary" data-translate="about_summary">I'm a passionate Software Engineering student at African Leadership University in Kigali, Rwanda, where I'm building the technical and leadership skills to create impactful solutions for Africa and beyond. My journey combines hands-on development experience through internships at Sonatel and AGETIP, where I've worked on real-world applications, from cybersecurity automation tools to full-stack web development. I'm driven by the belief that technology can solve Africa's most pressing challenges.</p>
                 </div>
-                <div class="key-strengths">
-                    <h3>Key Strengths</h3>
-                    <ul>
-                        <li>Project Management</li>
-                        <li>Executive Calendar Optimization</li>
-                        <li>Efficient Communication</li>
-                        <li>Technical Problem Solving</li>
-                        <li>Highly adaptable and able to learn efficiently</li>
-                    </ul>
+
+                <!-- Right: Key Strengths -->
+                <div class="about-strengths-column">
+                    <h3 data-translate="about_strengths_title">Key Strengths</h3>
+                    <div class="strengths-list">
+                        <div class="strength-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span data-translate="strength_1">Full-Stack Development</span>
+                        </div>
+                        <div class="strength-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span data-translate="strength_2">Mobile App Development (Flutter)</span>
+                        </div>
+                        <div class="strength-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span data-translate="strength_3">UI/UX Design & Prototyping</span>
+                        </div>
+                        <div class="strength-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span data-translate="strength_4">Problem Solving & Innovation</span>
+                        </div>
+                        <div class="strength-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span data-translate="strength_5">Agile Development & Collaboration</span>
+                        </div>
+                    </div>
+
+                    <div class="languages-section">
+                        <h4 data-translate="about_languages">Languages</h4>
+                        <div class="language-compact">
+                            <span>English - Fluent</span>
+                            <span>French - Fluent</span>
+                            <span>Wolof - Native</span>
+                            <span>German - Basic</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="achievements" class="achievements">
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Key Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="-0.5 -0.5 3 3" id="Mail--Streamline-Block-Free" height="50" width="50">
-                            <desc>Mail Streamline Icon: https://streamlinehq.com</desc>
-                            <path fill="#000000" d="M0 0.39016375V1.875h2V0.39016625L1.00000125 1.3901625 0 0.39016375Z"
-                                stroke-width="1">
-                            </path>
-                            <path fill="#000000" d="M2 0.125H0.000001609325L1.00000125 1.125 2 0.125Z" stroke-width="1">
-                            </path>
-                        </svg></div>
-                    <h3>Email Management</h3>
-                    <p>Reduced email backlog from 150+ to under 20 messages</p>
+            <h2 class="section-title" data-translate="skills_title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects_title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project1_title">Vitaro</h3>
+                    <p class="project-desc" data-translate="project1_desc">Humanitarian app connecting blood donors with those in need. Built to save lives through technology.</p>
+                    <div class="project-tags">
+                        <span class="tag">Mobile App</span>
+                        <span class="tag">Social Impact</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Fatoumata32" target="_blank" class="project-link" aria-label="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" id="App-Window-Clock--Streamline-Ultimate" height="50" width="50">
-                            <desc>App Window Clock Streamline Icon: https://streamlinehq.com</desc>
-                            <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.763 8.25293v-6c0 -0.39783 -0.158 -0.77936 -0.4393 -1.06066 -0.2813 -0.281305 -0.6629 -0.43934 -1.0607 -0.43934h-18c-0.39782 0 -0.77936 0.158035 -1.06066 0.43934C0.921036 1.47357 0.763 1.8551 0.763 2.25293V18.7529c0 0.3979 0.158036 0.7794 0.43934 1.0607 0.2813 0.2813 0.66284 0.4393 1.06066 0.4393h6"
-                                stroke-width="1.5"></path>
-                            <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M0.763 5.25293h21"
-                                stroke-width="1.5">
-                            </path>
-                            <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                d="M11.26 17.2529c0 0.788 0.1552 1.5682 0.4567 2.2961 0.3016 0.728 0.7435 1.3894 1.3007 1.9466 0.5571 0.5571 1.2186 0.9991 1.9465 1.3006 0.728 0.3015 1.5082 0.4567 2.2961 0.4567s1.5682 -0.1552 2.2961 -0.4567c0.728 -0.3015 1.3894 -0.7435 1.9466 -1.3006 0.5571 -0.5572 0.9991 -1.2186 1.3006 -1.9466 0.3015 -0.7279 0.4567 -1.5081 0.4567 -2.2961 0 -0.7879 -0.1552 -1.5681 -0.4567 -2.2961 -0.3015 -0.7279 -0.7435 -1.3894 -1.3007 -1.9465 -0.5571 -0.5572 -1.2185 -0.9991 -1.9465 -1.3006 -0.7279 -0.3016 -1.5082 -0.4568 -2.2961 -0.4568s-1.5681 0.1552 -2.2961 0.4568c-0.7279 0.3015 -1.3894 0.7434 -1.9465 1.3006 -0.5572 0.5571 -0.9991 1.2186 -1.3007 1.9465 -0.3015 0.728 -0.4567 1.5082 -0.4567 2.2961Z"
-                                stroke-width="1.5"></path>
-                            <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                d="M19.912 17.2531H17.26v-2.651" stroke-width="1.5"></path>
-                        </svg></div>
-                    <h3>Time Optimization</h3>
-                    <p>Implemented system saving 4 hours weekly or more</p>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project2_title">Farm Connect</h3>
+                    <p class="project-desc" data-translate="project2_desc">Agricultural platform empowering farmers with data-driven insights to improve crop yields and productivity.</p>
+                    <div class="project-tags">
+                        <span class="tag">AgriTech</span>
+                        <span class="tag">Web Platform</span>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            id="Performance-Increase--Streamline-Ultimate" height="50" width="50">
-                            <desc>Performance Increase Streamline Icon: https://streamlinehq.com</desc>
-                            <g id="Performance-Increase--Streamline-Ultimate.svg">
-                                <path
-                                    d="M2 17.87a1 1 0 0 0 -1 1v1.5a0.25 0.25 0 0 0 0.25 0.25h3.5a0.25 0.25 0 0 0 0.25 -0.25v-1.5a1 1 0 0 0 -1 -1Z"
-                                    fill="#000000" stroke-width="1"></path>
-                                <path
-                                    d="M8 14.87a1 1 0 0 0 -1 1v4.5a0.25 0.25 0 0 0 0.25 0.25h3.5a0.25 0.25 0 0 0 0.25 -0.25v-4.5a1 1 0 0 0 -1 -1Z"
-                                    fill="#000000" stroke-width="1"></path>
-                                <path
-                                    d="M14 11.37a1 1 0 0 0 -1 1v8a0.25 0.25 0 0 0 0.25 0.25h3.5a0.25 0.25 0 0 0 0.25 -0.25v-8a1 1 0 0 0 -1 -1Z"
-                                    fill="#000000" stroke-width="1"></path>
-                                <path
-                                    d="M19.25 20.62h3.5a0.25 0.25 0 0 0 0.25 -0.25v-12a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v12a0.25 0.25 0 0 0 0.25 0.25Z"
-                                    fill="#000000" stroke-width="1"></path>
-                                <path
-                                    d="m18.07 4.21 0.31 0.46A0.74 0.74 0 0 0 19 5a0.74 0.74 0 0 0 0.62 -0.38l2 -3.5a0.75 0.75 0 0 0 0 -0.79 0.72 0.72 0 0 0 -0.71 -0.33l-4 0.5a0.75 0.75 0 0 0 -0.53 1.16l0.3 0.46a0.24 0.24 0 0 1 -0.07 0.34L2.45 11.92a1 1 0 0 0 -0.28 1.39 1 1 0 0 0 0.83 0.44 0.94 0.94 0 0 0 0.55 -0.17l14.17 -9.44a0.25 0.25 0 0 1 0.35 0.07Z"
-                                    fill="#000000" stroke-width="1"></path>
-                                <path
-                                    d="M1 24h22a1 1 0 0 0 0.31 -1.95A1.06 1.06 0 0 0 23 22H1a1.06 1.06 0 0 0 -0.31 0.05A1 1 0 0 0 1 24Z"
-                                    fill="#000000" stroke-width="1"></path>
-                            </g>
-                        </svg></div>
-                    <h3>Campaign Performance</h3>
-                    <p>Improved click-through rates by 30%</p>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project3_title">Ndey'As Shop</h3>
+                    <p class="project-desc" data-translate="project3_desc">Functional e-commerce website built collaboratively, featuring product management and checkout system.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Full Stack</span>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16"
-                            fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                            id="Coin--Streamline-Tabler" height="50" width="50">
-                            <desc>Coin Streamline Icon: https://streamlinehq.com</desc>
-                            <path d="M1.875 7.5a5.625 5.625 0 1 0 11.25 0 5.625 5.625 0 1 0 -11.25 0" stroke-width="1">
-                            </path>
-                            <path
-                                d="M9.25 5.625A1.25 1.25 0 0 0 8.125 5h-1.25a1.25 1.25 0 1 0 0 2.5h1.25a1.25 1.25 0 1 1 0 2.5h-1.25a1.25 1.25 0 0 1 -1.125 -0.625"
-                                stroke-width="1"></path>
-                            <path d="M7.5 4.375v6.25" stroke-width="1"></path>
-                        </svg></div>
-                    <h3>Cost Reduction</h3>
-                    <p>Optimized travel planning with 20% savings</p>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project4_title">Book Swap</h3>
+                    <p class="project-desc" data-translate="project4_desc">Mobile app enabling students to exchange books seamlessly, promoting sustainability and affordability.</p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project5_title">SheaNet</h3>
+                    <p class="project-desc" data-translate="project5_desc">Platform supporting women in Ghana's shea butter industry through market access and capacity building.</p>
+                    <div class="project-tags">
+                        <span class="tag">Women Empowerment</span>
+                        <span class="tag">Web App</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project6_title">DEXA (Sonatel)</h3>
+                    <p class="project-desc" data-translate="project6_desc">Cybersecurity automation tool developed during internship to optimize workflows in the security department.</p>
+                    <div class="project-tags">
+                        <span class="tag">Automation</span>
+                        <span class="tag">Cybersecurity</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project7_title">SenePanda (In Progress)</h3>
+                    <p class="project-desc" data-translate="project7_desc">Application aimed at boosting Senegal's local economy by connecting consumers with local businesses.</p>
+                    <div class="project-tags">
+                        <span class="tag">Entrepreneurship</span>
+                        <span class="tag">In Development</span>
+                    </div>
+                </div>
+                <div class="project-card highlight-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="project8_title">E-Lab Winner</h3>
+                    <p class="project-desc" data-translate="project8_desc">First prize winner at ALU's E-Lab pitch competition for a project raising awareness about early pregnancy.</p>
+                    <div class="project-tags">
+                        <span class="tag">Award Winner</span>
+                        <span class="tag">Social Impact</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Lighthouse Virtual Assists</h3>
-                        <span>Mar. 2024 – Oct. 2024</span>
-                    </div>
-                    <p class="role">Virtual Assistant | Remote</p>
-                    <ul class="experience-details">
-                        <li>Designed a streamlined calendar management system saving four hours per week</li>
-                        <li>Developed innovative email management reducing backlog by 87%</li>
-                        <li>Implemented project management framework with 100% on-time delivery</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Ndey'As Company</h3>
-                        <span>2021 – 2023</span>
-                    </div>
-                    <p class="role">Sale Assistant | Dakar, SN</p>
-                    <ul class="experience-details">
-                        <li>Improved social media campaign performance by 30%</li>
-                        <li>Reduced meeting conflicts by 25% through calendar optimization</li>
-                        <li>Achieved 20% reduction in travel costs through strategic planning</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="certifications" class="certifications">
         <div class="container">
@@ -180,88 +316,151 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Services</h2>
-            <ul class="services-list">
-                <li>Email and Calendar Management</li>
-                <li>Data Entry and Research</li>
-                <li>Social Media Management</li>
-                <li>Basic Graphic Design</li>
-                <li>Email Marketing Campaigns</li>
-                <li>Document Preparation and Formatting</li>
-                <li>Customer Support and Follow-ups</li>
-                <li>Travel Planning and Booking</li>
-                <li>Automation</li>
-                <li>Market Research and Competitor Analysis</li>
-                <li>Content Scheduling and Posting</li>
-                <li>Online Community Engagement</li>
-            </ul>
+            <h2 class="section-title" data-translate="services_title">What I Offer</h2>
+            <p class="services-intro" data-translate="services_intro">As a software engineering student with real-world experience, I offer freelance and collaborative opportunities in:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="service1_title">Web Development & Design</h3>
+                    <p data-translate="service1_desc">Responsive, modern websites built with HTML, CSS, JavaScript, and frameworks like Tailwind and Bootstrap.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 3v18"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="service2_title">UI/UX & Prototyping</h3>
+                    <p data-translate="service2_desc">User-centered design solutions using Figma and Canva to create intuitive, beautiful interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="service3_title">Frontend Development</h3>
+                    <p data-translate="service3_desc">Interactive web applications with clean, maintainable code and seamless user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="service4_title">Mobile App Development</h3>
+                    <p data-translate="service4_desc">Cross-platform mobile applications using Flutter for iOS and Android.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="service5_title">Automation & Tech Support</h3>
+                    <p data-translate="service5_desc">Workflow automation scripts and technical troubleshooting to boost productivity.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="service6_title">Freelance Collaboration</h3>
+                    <p data-translate="service6_desc">Available for project-based work, internships, and collaborative development opportunities.</p>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Testimonials</h2>
-            <div class="testimonial">
-                <p>"Fatoumata was instrumental in organizing my business operations. Her efficiency and attention to
-                    detail
-                    are unmatched."</p>
-                <h4>- John Doe, Business Owner</h4>
-            </div>
-            <div class="testimonial">
-                <p>"I have had the pleasure of working alongside Fatoumata Ndiaye for over 11 months, and I can
-                    confidently say that she is
-                    one of the most talented, dedicated, and reliable individuals I have ever worked with. Fatoumata
-                    consistently
-                    demonstrates exceptional professionalism, a strong work ethic, and a genuine passion for excellence
-                    in everything she
-                    does.
-
-                    Her ability to approach challenges with a creative mindset and innovative solutions has greatly
-                    contributed to the
-                    success of our projects. Fatoumata's interpersonal skills are equally impressive; she fosters a
-                    positive and
-                    collaborative environment, making her a joy to work with both as a friend and as a colleague.
-
-                    I wholeheartedly recommend Fatoumata Ndiaye to any team or organization seeking a committed and
-                    skilled professional who
-                    will undoubtedly make a significant impact."</p>
-                <h4>- David, young & handsome Associate</h4>
-            </div>
-        </div>
-    </section>
-
-    <section id="languages">
-        <h2>Languages</h2>
-        <div class="card">
-            <div class="language-buttons">
-                <button class="language-button" data-language="English">English (Fluent)</button>
-                <button class="language-button" data-language="French">French (Expert)</button>
-                <button class="language-button" data-language="Wolof">Wolof (Native)</button>
-                <button class="language-button" data-language="Italian">Italian (Basic)</button>
-            </div>
-        </div>
-    </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Ready to Optimize Your Productivity?</h2>
-            <p class="contact-tagline">Let's connect and discuss how I can help elevate your business efficiency.</p>
-            <div class="contact-buttons">
-                <a href="mailto:fatoumata.nd01@gmail.com" class="btn primary">Email Me</a>
-                <a href="https://www.linkedin.com/in/fatoumata-ndiaye-23b9702ba/" class="btn secondary"
-                    target="_blank">Connect on
-                    LinkedIn</a>
-                <a href="/assets/FATOUMATA NDIAYE - RESUME.docx.pdf" class="btn accent" download>Download Resume</a>
+            <h2 class="section-title" data-translate="contact_title">Let's Build Something Amazing Together</h2>
+            <p class="contact-tagline" data-translate="contact_tagline">I'm always open to new opportunities, collaborations, and conversations. Whether you have a project in mind, want to discuss technology, or just want to connect, feel free to reach out!</p>
+
+            <div class="contact-methods">
+                <a href="mailto:fatoumata.nd01@gmail.com" class="contact-method">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4 data-translate="contact_email">Email</h4>
+                        <p>fatoumata.nd01@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/221781712353" target="_blank" class="contact-method">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4 data-translate="contact_whatsapp">WhatsApp</h4>
+                        <p>+221 78 171 23 53</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/fatoumata-ndiaye-b92901391/" target="_blank" class="contact-method">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4 data-translate="contact_linkedin">LinkedIn</h4>
+                        <p>Fatoumata Ndiaye</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Fatoumata32" target="_blank" class="contact-method">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h4 data-translate="contact_github">GitHub</h4>
+                        <p>@Fatoumata32</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="mailto:fatoumata.nd01@gmail.com" class="btn primary" data-translate="contact_btn_hire">Hire Me</a>
+                <a href="/assets/FATOUMATA NDIAYE - CV RESUME (EN).docx.pdf" class="btn secondary" download data-translate="contact_btn_resume_en">Download Resume (EN)</a>
+                <a href="/assets/FATOUMATA NDIAYE - CV RESUME (FR).docx.pdf" class="btn secondary" download data-translate="contact_btn_resume_fr">Download CV (FR)</a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2024 Fatoumata Ndiaye. All rights reserved.</p>
+            <p>© 2025 Fatoumata Ndiaye. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="cert-modal">
+        <span class="cert-modal-close">&times;</span>
+        <img class="cert-modal-content" id="certModalImg">
+        <div id="certModalCaption"></div>
+    </div>
 
     <script src="script.js"></script>
 
